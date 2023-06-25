@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body {
+  background: linear-gradient(#570163, #cc3fde);
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 10px;
+  position: fixed;
+  z-index: 999;
+  width: 95%;
+}
+header .logo {
+  color: white;
+  text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 800;
+  margin-left: 30px;
+}
+header a {
+  text-decoration: none;
+}
+header ul {
+  display: flex;
+  list-style: none;
+}
+header ul li {
+  margin: 10px;
+  color: white;
+}
+header ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 15px;
+  font-weight: 500;
+  transition: 1s;
+  -webkit-transition: 1s;
+  -moz-transition: 1s;
+  -ms-transition: 1s;
+  -o-transition: 1s;
+}
+header ul li a:hover,
+.active {
+  background: white;
+  color: black;
+  border-radius: 2em;
+  -webkit-border-radius: 2em;
+  -moz-border-radius: 2em;
+  -ms-border-radius: 2em;
+  -o-border-radius: 2em;
+}
+header ul li a:hover{
+    letter-spacing: 0.1em;
+
+}
+
+.main {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(to top, #570163, transparent);
+}
+
+.main img {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#moon {
+    width: 100%;
+    height: 110%;
+    margin: 20px 0;
+  mix-blend-mode: screen;
+  transform: translateY(50px);
+  -webkit-transform: translateY(50px);
+  -moz-transform: translateY(50px);
+  -ms-transform: translateY(50px);
+  -o-transform: translateY(50px);
+}
+.sayed {
+  color: white;
+  font-size: 25px;
+  transform: translateY(-180px);
+  -webkit-transform: translateY(-180px);
+  -moz-transform: translateY(-180px);
+  -ms-transform: translateY(-180px);
+  -o-transform: translateY(-180px);
+  position: absolute;
+  text-transform: uppercase;
+
+}
+
+.content {
+    margin: 10PX 0;
+  padding: 10px 5px;
+  height: 100vh;
+  margin: 10px;
+  color: #fff;
+}
+
+.content h2 {
+  font-size: 30px;
+}
+.content p {
+  margin: 10px;
+}
